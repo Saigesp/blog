@@ -1,0 +1,29 @@
+baseURL: https://saigesp.github.io/blog/
+languageCode: es-ES
+title: Saigesp's Blog
+theme: PaperMod
+
+params:
+    env: production
+
+    homeInfoParams:
+        Title: Aupa! 👋
+        Content: >
+            Soy Santi, un progamador web con formación en diseño industrial.
+
+            - En este sitio publico cosas sobre **tecnología**, **datos**, y **política**.
+            
+
+    socialIcons:
+        - name: twitter
+          url: https://twitter.com/Saigesp
+        - name: github
+          url: https://github.com/Saigesp
+        - name: other
+          url: https://www.dataira.com
+
+    ShowShareButtons: true
+    ShowPostNavLinks: true
+    ShowCodeCopyButtons: true
+    ShowReadingTime: true
+    ShowToc: true
