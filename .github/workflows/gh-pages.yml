@@ -1,11 +1,10 @@
-name: github pages
+name: Deploy on Github pages
 
 on:
   push:
     branches:
       - master
   pull_request:
-
   workflow_dispatch:
 
 jobs:
@@ -25,8 +24,8 @@ jobs:
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
-        if: github.ref == 'refs/heads/master'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          external_repository: saigesp/blog
           publish_dir: ./public
 
