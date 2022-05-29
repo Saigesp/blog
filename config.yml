@@ -9,10 +9,9 @@ params:
     homeInfoParams:
         Title: Aupa! 👋
         Content: >
-            Soy Santi, un progamador web con formación en diseño industrial.
+            Soy Santi, un progamador web especializado en obtención y visualización de datos.
 
             - En este sitio publico cosas sobre **tecnología**, **datos**, y **política**.
-            
 
     socialIcons:
         - name: twitter
