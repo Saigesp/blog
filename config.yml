@@ -1,6 +1,6 @@
-baseURL: https://saigesp.github.io/blog/
+baseURL: https://datairahub.github.io/blog/
 languageCode: es-ES
-title: Saigesp's Blog
+title: dataira's blog
 theme: PaperMod
 
 params:
@@ -9,15 +9,15 @@ params:
     homeInfoParams:
         Title: Aupa! 👋
         Content: >
-            Soy Santi, un progamador web especializado en obtención y visualización de datos.
+            Somos un estudio de productos digitales especializado en diseño y tecnología.
 
-            - En este sitio publico cosas sobre **tecnología**, **datos**, y **política**.
+            - En este sitio publicamos cosas sobre **tecnología**, **datos**, y **política**.
 
     socialIcons:
         - name: twitter
-          url: https://twitter.com/Saigesp
+          url: https://twitter.com/dataira_
         - name: github
-          url: https://github.com/Saigesp
+          url: https://github.com/datairahub
         - name: other
           url: https://www.dataira.com
 
