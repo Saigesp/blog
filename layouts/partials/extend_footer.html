@@ -1,0 +1,21 @@
+<script>
+function removeElementsByClass(className) {
+    const elements = document.getElementsByClassName(className);
+    while (elements.length > 0) {
+        elements[0].parentNode.removeChild(elements[0]);
+    }
+}
+
+function addCustomFooter(text) {
+    var footer = document.createElement('footer');
+    footer.classList.add('footer');
+    var span = document.createElement('span'); // document.createTextNode();
+    span.innerHTML = text;
+    footer.appendChild(span);
+    var body = document.getElementsByTagName('body')[0];
+    body.appendChild(footer);
+}
+
+removeElementsByClass('footer');
+addCustomFooter('Made with ♥ by Dataira');
+</script>
