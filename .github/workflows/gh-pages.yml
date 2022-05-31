@@ -22,9 +22,6 @@ jobs:
           hugo-version: 'latest'
           # extended: true
 
-      - name: Remove old files
-        run: rm -rf ./public
-
       - name: Build
         run: hugo --minify --config config.yml
 
