@@ -22,9 +22,6 @@ jobs:
           hugo-version: 'latest'
           # extended: true
 
-      - name: Remove old files
-        run: rm -rf ./public
-
       - name: Build
         run: hugo --minify --config config.yml
 
@@ -34,4 +31,5 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
+          cname: blog.dataira.com
           keep_files: false
