@@ -6,6 +6,9 @@ function removeElementsByClass(className) {
     }
 }
 
+/**
+ * Change default footer
+ */
 function addCustomFooter(text) {
     var footer = document.createElement('footer');
     footer.classList.add('footer');
@@ -16,6 +19,23 @@ function addCustomFooter(text) {
     body.appendChild(footer);
 }
 
+/**
+ * Allow open images inside post content with a click
+ */
+function allowOpenImages() {
+    var bodyImgs = document.getElementsByClassName('post-content')[0].getElementsByTagName('img');
+    for (var i = 0; i < bodyImgs.length; i++) {
+        if (!bodyImgs[i].src.includes('#expandable')) continue;
+        bodyImgs[i].classList.add('expandable');
+        var parent = bodyImgs[i].parentNode;
+        var link = document.createElement('a');
+        link.setAttribute('href', bodyImgs[i].src);
+        link.appendChild(bodyImgs[i]);
+        parent.appendChild(link);
+    }
+}
+
 removeElementsByClass('footer');
 addCustomFooter('Made with ♥ by Dataira');
+allowOpenImages();
 </script>

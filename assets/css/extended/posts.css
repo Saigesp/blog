@@ -1,0 +1,14 @@
+
+@media screen and (min-width: 900px) {
+    .post-content p img.expandable {
+        max-width: 80vw;
+        margin-left: calc(50% - 40vw);
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .post-content p img.expandable {
+        max-width: 1120px;
+        margin-left: calc(50% - 560px);
+    }
+}

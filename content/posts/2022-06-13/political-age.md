@@ -2,10 +2,11 @@
 title: "La edad de acceso al poder"
 date: 2022-05-13T13:38:51+02:00
 summary: "Análisis de la edad de acceso a cargos políticos en España"
+author: ["@Saigesp"]
 draft: false
 
 cover:
-    image: 2022-06-13/cover.png
+    image: /2022-06-13/cover.png
     alt: Imagen de portada
     relative: true
 ---
@@ -43,3 +44,7 @@ Si bien parece que con esas tres fuentes podemos obtener todos los datos que nec
 - Fuentes oficiales.
 
 - Fuentes no oficiales.
+
+### Más cosas
+
+![goverment-mean-age](/2022-06-13/goverment-mean-age.jpeg#expandable)
