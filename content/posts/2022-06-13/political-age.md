@@ -13,9 +13,9 @@ cover:
 
 ### Introducción
 
-A raíz de la lectura del libro **[Generació tap](https://www.arallibres.cat/cataleg/generacio-tap/)** en la que su autor, Josep Sala i Cullell, hace un encendido análisis del reparto de poder entre las distintas generaciones en España argumentando que la generación del *baby-boom* se ha adueñado de las instituciones democráticas y ha taponado el acceso de las siguientes a la política -de ahí el nombre "generación tapón"-, nos surge la pregunta: ¿Eran los políticos más jóvenes antes o ahora? O, más escuetamente: **¿Ha cambiado la edad de acceso al poder?**
+A raíz de la lectura del libro **[Generació tap](https://www.arallibres.cat/cataleg/generacio-tap/)** en la que su autor, Josep Sala i Cullell, hace un encendido análisis del reparto de poder entre las distintas generaciones en España nos surge la pregunta: ¿Eran los políticos más jóvenes antes o ahora? O, también: **¿Ha cambiado la edad de acceso al poder?**
 
-Esta pregunta *debería* ser fácil de responder con datos en la mano, ya que *deberían* existir registros de fácil acceso para saber cuando accedió al cargo cada uno de los principales políticos del país, pero como siempre que se mezclan datos y sociedad, la cosa acaba complicándose.
+Esta pregunta *debería* ser fácil de responder con datos en la mano, ya que *deberían* existir registros de fácil acceso para saber cuando accedió al cargo cada uno de los principales políticos del país, pero como siempre que se mezclan datos y administración pública, la cosa acaba complicándose.
 
 #### Desgranando el problema
 

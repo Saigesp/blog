@@ -10,6 +10,7 @@ function removeElementsByClass(className) {
  * Change default footer
  */
 function addCustomFooter(text) {
+    removeElementsByClass('footer');
     var footer = document.createElement('footer');
     footer.classList.add('footer');
     var span = document.createElement('span'); // document.createTextNode();
@@ -23,10 +24,13 @@ function addCustomFooter(text) {
  * Allow open images inside post content with a click
  */
 function allowOpenImages() {
-    var bodyImgs = document.getElementsByClassName('post-content')[0].getElementsByTagName('img');
+    var postContents = document.getElementsByClassName('post-content');
+    if (!postContents.length) return;
+    var bodyImgs = postContents[0].getElementsByTagName('img');
     for (var i = 0; i < bodyImgs.length; i++) {
         if (!bodyImgs[i].src.includes('#expandable')) continue;
         bodyImgs[i].classList.add('expandable');
+        bodyImgs[i].parentNode.classList.add('expandable__wrap');
         var parent = bodyImgs[i].parentNode;
         var link = document.createElement('a');
         link.setAttribute('href', bodyImgs[i].src);
@@ -35,7 +39,27 @@ function allowOpenImages() {
     }
 }
 
-removeElementsByClass('footer');
-addCustomFooter('Made with ♥ by Dataira');
+/**
+ * Add twitter links to post meta authors if word starts with '@'
+ */
+function authorsToTwitterLinks() {
+    var postMetas = document.getElementsByClassName('post-meta');
+    if (!postMetas.length) return;
+    var content = postMetas[0].innerHTML;
+    var regex = /@(\w){1,15}/ig;
+    var found = content.match(regex);
+    if (!found) return;
+    for (var i = 0; i < found.length; i++) {
+        content = content.replace(
+            found[i],
+            `<a href="https://twitter.com/${found[i].substring(1)}" target="_blank" rel="noreferrer noopener">${found[i]}</a>`,
+        )
+    }
+    postMetas[0].innerHTML = content;
+
+}
+
+addCustomFooter('Made with 🖤 by <a href="http://dataira.com/" target="_blank" rel="noreferrer noopener">Dataira</a>');
 allowOpenImages();
+authorsToTwitterLinks();
 </script>
